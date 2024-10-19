@@ -1,0 +1,59 @@
+.search-history__item {
+  display: flex;
+  align-items: center;
+  background-color: var(--history-bg-color);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  justify-content: space-between;
+  gap: 1rem
+}
+
+.search-history__actions {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.search-history__actions .btn-action {
+  padding: .5rem;
+  background-color: var(--btn-action-history-bg);
+  border-radius: 1000px;
+  border: 1px solid var(--btn-action-history-border);
+  filter: var(--filter-brightness);
+}
+
+.search-history__actions .btn-action img {
+  filter: var(--filter-brightness-icon);
+  height: 16px;
+  width: 16px;
+
+}
+
+.wrapper-info {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.search-history__actions {
+  width: 20%;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .wrapper-info {
+  flex-direction: column;
+  width: auto;
+
+  }
+  .txt-city-name {
+    font-size: .9rem;
+  }
+  .txt-date {
+    font-size: .7rem;
+  }
+  .search-history__actions {
+    width:auto
+  }
+ }

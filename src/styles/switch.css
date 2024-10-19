@@ -1,0 +1,98 @@
+.container-switch {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 35px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  border: 1px solid var(--text-primary);
+  border-radius: 35px;
+  transition: 0.4s;
+}
+
+
+.icon-sun {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border-radius: 50%;
+  background-color: #ffc409;
+  height: 0.625em;
+  outline: 0.25em dotted #ffc409;
+  outline-offset: 0.125em;
+  left: 2.7em;
+  top: 0.7em;
+  width: 0.625em;
+}
+
+.icon-moon {
+  position: absolute;
+  border-radius: 50%;
+
+  box-shadow: 0.25em 0.25em #5901d8;
+  height: 1.125em;
+  right: 2.7em;
+  top: 0.125em;
+  width: 1.125em;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  left: 5px;
+  bottom: 5px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: transparent;
+  border: 1px solid var(--text-primary);
+}
+
+input:checked + .slider:before {
+  transform: translateX(35px);
+}
+
+input:checked + .slider .icon-sun {
+  opacity: 0;
+}
+
+input:checked + .slider .icon-moon {
+  opacity: 1;
+}
+
+.icon-moon {
+  opacity: 0;
+}
+
+@media (max-width: 600px) {
+  .container-switch {
+    width: 90%
+  }
+}

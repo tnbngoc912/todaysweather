@@ -1,0 +1,161 @@
+.card {
+  width: 50%;
+  border-radius: 40px;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 3rem;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: var(--card-bg-color);
+  backdrop-filter: blur(10px);
+  border: var(--card-border);
+  margin-bottom: 2rem;
+}
+
+.card.mt-5 {
+  margin-top: 5rem;
+}
+
+.card.mt-1 {
+  margin-top: 1rem;
+}
+
+.card .card__title {
+  text-align: left;
+}
+
+.card__tempurature {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--card-tempurature);
+}
+
+.card .card__description {
+  text-align: left;
+  color: var(--text-secondary);
+  font-weight: lighter;
+}
+
+.card .card-container-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.card .card-container-buttons button {
+  flex: 1;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  background: var(--accent);
+  border-radius: 5px;
+  color: var(--text-primary);
+  border: 1px solid black;
+}
+
+.card .card-container-buttons button:hover {
+  background-color: var(--accent-hover);
+}
+
+.card .card-container-buttons button:active {
+  background-color: var(--accent);
+}
+
+.img-sunny {
+  position: absolute;
+  right: 0;
+  top: -8rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card__more-info {
+  color: var(--card-info-text);
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-title {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  .card__more-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;      
+  }
+}
+
+
+.search-history {
+  padding: 1rem 1.5rem;
+  background: var(--card-bg-color);
+  border-radius: 24px;
+}
+
+
+.img-not-found {
+  width: 30%;
+}
+
+.wrapper-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 2rem;
+}
+
+.wrapper-empty-state { 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.img-empty-state {
+  width: 30%;
+}
+
+.wrapper-info-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+@media (max-width: 600px) {
+ .card {
+  padding: 1rem
+ }
+ .img-sunny {
+    width: 55%;
+    top: -6rem;
+ }
+ .card.mt-5 {
+  margin-top: 2rem;
+ }
+ .wrapper-info-title {
+  flex-direction: column;
+  gap: 0;
+  align-items: flex-end; 
+  flex-direction: column-reverse;
+}
+}
+

@@ -1,0 +1,48 @@
+:root {
+  --background: #f2f2f2;
+  --white-color: #fff;
+  --text-primary: #000;
+  --text-secondary: #4e4e4e;
+  --accent: #dfb017;
+  --accent-hover: #cea315; 
+  --border: #1f1e1e;
+  --shadow: 7px 15px 13px -4px #78787856;
+  --bg-image: url('../assets/background-light.png');
+  --card-bg-color: rgba(255, 255, 255, 0.20);
+  --card-border: 1px solid rgba(255, 255, 255, 0.50);
+  --purple-color: #6C40B5;
+  --card-info-text: #666;
+  --card-tempurature:  var(--purple-color);
+  --search-btn-bg: var(--purple-color);
+  --search-placeholder-bg: var(--card-bg-color);
+  --shadow-focus: rgba(98, 0, 255, 0.2);
+  --history-bg-color: rgba(255, 255, 255, 0.40);
+  --btn-action-history-bg: var(--white-color);
+  --btn-action-history-border: var(--white-color);
+  --filter-brightness: grayscale(1);
+  --filter-brightness-icon: brightness(0.5);
+}
+
+[data-theme='dark'] {
+  --background: #05010a;
+  --white-color: #fff;
+  --text-primary: var(--white-color);
+  --text-secondary: #a7a4a4;
+  --accent: #6a5acd;
+  --accent-hover: #5b4cbe; 
+  --border: #696969;
+  --shadow: 7px 15px 13px -4px #ffffff1b;
+  --bg-image: url('../assets/background-dark.png');
+  --card-bg-color: rgba(26, 26, 26, 0.30);
+  --card-border: none;
+  --card-info-text: var(--white-color);
+  --card-tempurature: var(--white-color);
+  --search-btn-bg: #28124D;
+  --search-placeholder-bg: rgba(26, 26, 26, 0.50);
+  --shadow-focus: rgba(148, 104, 216, 0.589);
+  --history-bg-color: rgba(26, 26, 26, 0.50);  
+  --btn-action-history-bg: transparent;
+  --btn-action-history-border: var(--white-color);
+  --filter-brightness: brightness(0.7);
+  --filter-brightness-icon: none
+}
